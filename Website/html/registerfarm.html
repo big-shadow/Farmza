@@ -1,0 +1,128 @@
+<div class="form">
+
+  <div class="jumbotron">
+    <h1 class="animated fadeIn">Hi, {{user.firstname}}.</h1>
+    <p class="animated fadeIn">This won't take long.</p>
+  </div>
+
+  <div id='errors'></div>
+<div class="register-farm-form animated fadeIn">
+  <form id='register' class="form-horizontal" onsubmit="registerFarm()">
+    <fieldset>
+
+      <!-- Form Name -->
+      <legend>Together, we'll put your farm on the map.</legend>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="name">Farm Name</label>
+        <div class="col-md-8">
+          <input id="name" name="name" type="text" placeholder="Ray's Organics" class="form-control input-md" required="">
+          <span class="help-block">The name of your farm.</span>
+        </div>
+      </div>
+
+      <!-- Appended Input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="subdomain">Web Address</label>
+        <div class="col-md-8">
+          <div class="input-group">
+            <input id="subdomain" name="subdomain" class="form-control" placeholder="https://www.raysorganics" type="text">
+            <span class="input-group-addon">.{{appname.toLowerCase()}}.com</span>
+          </div>
+          <p class="help-block">Your farm's new {{appname}} website address.</p>
+        </div>
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="mission">Mission Statement</label>
+        <div class="col-md-8">
+          <textarea class="form-control" id="mission" name="mission">Describe your goal(s).</textarea>
+        </div>
+      </div>
+
+      <!-- Select Basic -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="country">Country</label>
+        <div class="col-md-8">
+          <select id="country" name="country" class="form-control">
+          </select>
+        </div>
+      </div>
+
+      <!-- Select Basic -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="state">State/Province</label>
+        <div class="col-md-8">
+          <select id="state" name="state" class="form-control">
+          </select>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="city">City</label>
+        <div class="col-md-8">
+          <input id="city" name="city" type="text" placeholder="Halifax" class="form-control input-md" required="">
+          <span class="help-block">Your city, or town.</span>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="streetnumber">Street Number</label>
+        <div class="col-md-8">
+          <input id="streetnumber" name="streetnumber" type="text" placeholder="1768" class="form-control input-md" required="">
+          <span class="help-block">Your farm's lot number.</span>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="street">Street Name</label>
+        <div class="col-md-8">
+          <input id="street" name="street" type="text" placeholder="Hollis Street" class="form-control input-md" required="">
+          <span class="help-block">The street you're farm is located on.</span>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="postal">Postal Code</label>
+        <div class="col-md-8">
+          <input id="postal" name="postal" type="text" placeholder="B3K 2V4" class="form-control input-md" required="">
+          <span class="help-block">Your farm's postal code.</span>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="phone">Phone Number</label>
+        <div class="col-md-8">
+          <input id="phone" name="phone" type="text" placeholder="(902) 680-6008" class="form-control input-md" required="">
+          <span class="help-block">Your business phone number.</span>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="email">E-mail Address</label>
+        <div class="col-md-8">
+          <input id="email" name="email" type="text" placeholder="john.smith@gmail.com" class="form-control input-md" required="">
+          <span class="help-block">Your business e-mail address.</span>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="submit"></label>
+        <div class="col-md-8">
+          <button id="submit" name="submit" class="btn btn-primary" style="float:right">Register</button>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+</div>

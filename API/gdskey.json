@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "laravel-api",
+  "private_key_id": "7a2b3b52c03af1f281dac594935b53a9fcb55832",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQC8RFjmyx9CKyA3\n8OlzHapK8QcavWE0WL8QS4u4sa+DHbCjVamPMZvWA/jjfzvSFSUd+9XQpunjPnb9\nrJLdrBu4T7eTOnaD9pWI+H1k59NoYmuJozHXsj3JPjksZe3rO9fxJyyfR1XrpVL3\n1GWGgOSLEZcRVvYa7+ng5BbSaSFcAbTdSa4yhoI1BOilScBmqkfErZ3TyA1/G+A8\nEMg3MyYNe02uHtCKXt8cqOK+YP7OamYC0QPa6Hv4Vv4wmwx6GsXev+z1AAyA00lC\nXJqI/Ew11nRJO2P86G5Ncs5FmGE2HeS/tHHYemlFA5UiERvmX+WigdmCVUQjAozj\nW7jl4yAtAgMBAAECggEBAJUEfGHh8VIMlKny1LW7i2laMsdlkyU+Aa3CPkvoyQW9\nYG1IhrfDCphx+HUJ5q248vIyveEz3Pl0HfdYu78eVaqj3qh4pAp8CYyrM4XFQb7j\n+D6vn+odOW6rA9IytAl4CsrkuRsx+b5V08A6rEm0iDHTsIGXFaHouHS71Zyifjc1\n/hzKPpPpnPcWtoV6yGz6dTyJzE9pOvPL3lYEJdYks5B7htA+xQotXvMTT+7HgaZG\noi8DnGSPIhU9GiGCvgjd4WAPXyijWovimJt5+EB+A8Tmdbp3vr2+TtO0MnR02Dd8\nPFU8ZAwgWxq7b3JyVI8jA2vNEGdpK50iBWAo3mEKfYECgYEA7C25CydHToRD9H9o\n8y5gjriz/B/cRtAZf9D4h6NF7DllMXAiVUFzTDpBRmEFbN3P9ZhYxHpm+YLyIyv0\n2J9XUA7zsg+Tyz97YlZVWK0zC+1Nzww+8OTBeIGpIdhGZkka38AMGRK0F3ttWCxj\ncKgaZe0Omv6qZR39TouiYIie2Z0CgYEAzBE/T4XK8CLfgOTqsSF+XmUn7Y7mkBtg\n69+FCnf7WfWmKt7mamcAjU475CtCjqTyosPOAvOaFTmEKqCK7IaF3CKQgpeiYup7\nKlWOaNLDec+7nIS0ZGFuqdN4tWVMoJVdBAYtmyp8pKk66NPp+t4jnLaA/gBPDgJv\nsxhHKmFPI9ECgYEAjY4aCoVQR88eq7xxus9hMCmkNskhzY+MuP8W9rT1g9Aixq7e\n5RqFcHq6BOTBy65mplzZV2nFrma9mjcOWYenXWSYy3BqtLcnzJjSLoQgxFVG/YHp\nd5ikHQYZyR9HkqbeZJ1GowCC0FA6CU8RisQ2jkC3ME7S8ig3Wox2lkVMcEECgYEA\nup4nNLUY8mQh2wD9c4E6zF5blk7xoOW4y9w8EWfJ7+nKzTfMpY+OnKrn8HBzTHmh\n/qFr250k0rYnnMf2Y/ldnwPo/dRnx2fBvORC+K+N3e7QFoHxaj8D8cCXieOaoNwX\nFSAFQvomxHqSieuJ9UaCcMUhz6c+pIQr3C+enS4iLpECgYEAvUuFcYU1s8jA7swX\n/thV6l+XGy6KoCx1mxSMmbVyfj3sRNdz/J6nQg4mDZPN+bMdIGZhWanaworc1vXi\nzSN/G9Z365KB/aQZhMg+Qiniu4NULLb3YX1N9eREHa/V9ojha0DXxr3f3RSr9J35\ntCyGAkCBWN+cfV+kV4/Uqui7LQc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gds-551@laravel-api.iam.gserviceaccount.com",
+  "client_id": "103963423974058141058",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gds-551%40laravel-api.iam.gserviceaccount.com"
+}

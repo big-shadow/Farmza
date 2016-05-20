@@ -1,0 +1,33 @@
+.form {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding-top: 40px;
+  margin: auto;
+  max-width: 600px;
+}
+
+.jumbotron {
+  background: none;
+}
+.jumbotron h1 {
+  margin: auto;
+  text-align: center;
+}
+
+.jumbotron p {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  margin: auto;
+  text-align: center;
+}
+
+legend {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+}
+
+.register-farm-form{
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
