@@ -10,14 +10,14 @@ function login()
   })
   .done(function(response) {
 
-    if(response !== undefined && response !== null)
+    if(validator.isSet(response))
     {
       $user = JSON.parse(response);
       $user.password = $cache.password;
 
-      if($user.type === 'Farmer')
+      if(validator.equals($user.type, 'Farmer'))
       {
-        if($user.farmid === undefined)
+        if(!validator.isSet($user.farmid))
         {
           window.location.href = '/#/registerfarm';
         }
@@ -26,17 +26,21 @@ function login()
           window.location.href = '/#/farm/dashboard';
         }
       }
-      else
+      else if(validator.equals($user.type, 'Customer'))
       {
         // TODO: Go to customer dashboard.
+      }
+      else
+      {
+        communicator.showDown();
       }
     }
     else
     {
-      helper.showInfo('We\'re currently unavailible. Try again soon!');
+      communicator.showDown();
     }
   })
   .fail(function(jqXHR, textStatus) {
-    helper.showRequestErrors(jqXHR.responseText);
+    communicator.showRequestErrors(jqXHR.responseText);
   });
 }

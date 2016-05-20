@@ -1,7 +1,7 @@
 function registerFarm()
 {
   var data = $('#register').serialize();
-  var response = helper.sendRequest(data, '/farm', 'POST');
+  var response = dispatcher.sendRequest(data, '/farm', 'POST');
 
   response.success(function(data)
   {
@@ -10,14 +10,15 @@ function registerFarm()
   })
   .fail(function(jqXHR, textStatus)
   {
-    helper.showRequestErrors(jqXHR.responseText);
+    communicator.showRequestErrors(jqXHR.responseText);
   });
 }
 
 function updateUser(farmid)
 {
   $user.farmid = farmid;
-  var response = helper.sendRequest($user, '/user', 'PUT');
+  $user.password = $cache.password;
+  var response = dispatcher.sendRequest($user, '/user', 'PUT');
 
   response.success(function(data)
   {
@@ -26,7 +27,7 @@ function updateUser(farmid)
   })
   .fail(function(jqXHR, textStatus)
   {
-    helper.showRequestErrors(jqXHR.responseText);
+    communicator.showRequestErrors(jqXHR.responseText);
   });
 }
 

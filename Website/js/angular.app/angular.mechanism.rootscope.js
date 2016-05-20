@@ -24,7 +24,7 @@ angular.module('app')
     setTimeout(
       function()
       {
-        helper.showInfo(message);
+        communicator.showInfo(message);
       }, 25);
     });
 
@@ -33,7 +33,7 @@ angular.module('app')
 var rootScopeMechanism = {
 
   SetTitleElement: function(value) {
-    if(value !== undefined && value !== null)
+    if(validator.isSet(value))
     {
       $('title').html($appname + ' | ' + value);
     }
@@ -46,7 +46,7 @@ var rootScopeMechanism = {
 
     $('#styles').empty();
 
-    if(stylesheets !== undefined && stylesheets !== null)
+    if(validator.isSet(stylesheets))
     {
       stylesheets.forEach(function(entry) {
         $('#styles').append('<link rel="stylesheet" href="' + entry + '" type="text/css">');
@@ -57,7 +57,7 @@ var rootScopeMechanism = {
 
     $('#scripts').empty();
 
-    if(scripts !== undefined && scripts !== null)
+    if(validator.isSet(scripts))
     {
       scripts.forEach(function(entry) {
         $('#scripts').append('<script src="' + entry + '"></script>');

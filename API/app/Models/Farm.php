@@ -32,10 +32,7 @@ class Farm extends GDSModel
   protected function prepare()
   {
     try {
-      $user = new User;
-      $user->fetchById(5717271485874176);
 
-      $this->setAncestor($user);
     } catch (Exception $e) {
 
     }

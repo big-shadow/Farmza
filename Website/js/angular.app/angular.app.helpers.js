@@ -1,17 +1,4 @@
-var helper = {
-
-  down: "We're currently down for maintenance. Try again later!",
-  unauthorized: "You're not authorized to view this page!",
-
-  isObject: function(val) {
-    return val instanceof Object;
-  },
-  getFirstElement: function(array) {
-    if  ((array[0] != null) && (array[0] != undefined)){
-      return array[0];
-    }
-    return array;
-  },
+var dispatcher = {
   sendRequest: function(data, url, type)
   {
     try {
@@ -27,25 +14,40 @@ var helper = {
       method: type,
       data: data
     });
-  },
+  }
+}
+
+var helper = {
   parseJson: function(string)
   {
-      data = JSON.parse(string);
+    data = JSON.parse(string);
 
-      try {
-        data = JSON.parse(data);
-      }
-      catch(err) {
+    try {
+      data = JSON.parse(data);
+    }
+    catch(err) {
 
-      }
+    }
 
-      return data;
-  },
+    return data;
+  }
+}
+
+
+var communicator = {
+
+  down: "We're currently down for maintenance. Try again later!",
+  unauthorized: "You're not authorized to view this page!",
+
   showRequestErrors: function(errors)
   {
-    var data = this.parseJson(errors);
+    var data = helper.parseJson(errors);
     var string = String(data.error).split('.,').join('.<br>');
     this.showError(string);
+  },
+  showDown: function()
+  {
+    this.showToastr('info', this.down);
   },
   showSuccess: function(message)
   {
@@ -90,10 +92,39 @@ var helper = {
 function submitForm(id, url, newUrl)
 {
   var data = $('#' + id).serialize();
-  var response = helper.sendRequest(data, url, "POST", newUrl);
+  var response = dispatcher.sendRequest(data, url, "POST", newUrl);
 
-  if(response !== undefined)
+  if(validator.isSet(response))
   {
     window.location.href = '/#/' + newUrl;
+  }
+}
+
+var validator = {
+
+  equals: function(val, expected)
+  {
+    if(val !== undefined)
+    {
+      if(val !== null)
+      {
+        if(val === expected)
+        {
+          return true;
+        }
+      }
+    }
+    return false;
+  },
+  isSet: function(val)
+  {
+    if(val !== undefined)
+    {
+      if(val !== null)
+      {
+          return true;
+        }
+    }
+    return false;
   }
 }
