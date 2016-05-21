@@ -10,9 +10,11 @@ angular.module('app', [
     url: '/login',
     templateUrl: 'html/login.html',
     stylesheets: [
-      'https://fonts.googleapis.com/css?family=Roboto:100,300',
       "css/form.css",
       "css/core/animate.css",
+      "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css",
+      "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css",
+      'https://fonts.googleapis.com/css?family=Roboto:100,300',
     ],
     scripts: [
       "js/login.js"
@@ -22,9 +24,11 @@ angular.module('app', [
       url: '/register',
       templateUrl: 'html/register.html',
       stylesheets: [
-        'https://fonts.googleapis.com/css?family=Roboto:100,300',
         "css/form.css",
         "css/core/animate.css",
+        "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css",
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css",
+        'https://fonts.googleapis.com/css?family=Roboto:100,300',
       ],
       scripts: [
         "js/register.js"
@@ -34,9 +38,11 @@ angular.module('app', [
       url: '/registerfarm',
       templateUrl: 'html/registerfarm.html',
       stylesheets: [
-        'https://fonts.googleapis.com/css?family=Roboto:100,300',
         "css/form.css",
         "css/core/animate.css",
+        "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css",
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css",
+        'https://fonts.googleapis.com/css?family=Roboto:100,300',
       ],
       scripts: [
        "js/registerfarm.js"
@@ -68,24 +74,28 @@ angular.module('app', [
         "plugins/datepicker/datepicker3.css",
         "plugins/daterangepicker/daterangepicker-bs3.css",
         "plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css",
+        "plugins/jvectormap/jquery-jvectormap-1.2.2.css",
         "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css",
-        "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css",
       ],
       scripts: [
-        "js/adminlte/adminlte.min.js",
-        "js/adminlte/dashboard.js",
+        "plugins/jQueryUI/jquery-ui.min.js",
+        "plugins/sparkline/jquery.sparkline.min.js",
         "plugins/morris/morris.min.js",
         "plugins/sparkline/jquery.sparkline.min.js",
         "plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
         "plugins/jvectormap/jquery-jvectormap-world-mill-en.js",
         "plugins/knob/jquery.knob.js",
+        "plugins/daterangepicker/moment.min.js",
         "plugins/daterangepicker/daterangepicker.js",
         "plugins/datepicker/bootstrap-datepicker.js",
         "plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js",
         "plugins/slimScroll/jquery.slimscroll.min.js",
         "plugins/fastclick/fastclick.min.js",
         "https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js",
-        "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"
+        "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js",
+        "js/adminlte/adminlte.min.js",
+        "js/adminlte/dashboard.js",
       ]
     })
   }]);

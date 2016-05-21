@@ -12,6 +12,8 @@ angular.module('app')
     $scripts = toState['scripts'];
     $title = toState['title'];
     $styles = toState['stylesheets'];
+
+    toastr.clear()
   });
 
   $rootScope.$on('$viewContentLoading', function(event, viewConfig){

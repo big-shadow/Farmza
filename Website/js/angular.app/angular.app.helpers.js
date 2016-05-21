@@ -33,7 +33,6 @@ var helper = {
   }
 }
 
-
 var communicator = {
 
   down: "We're currently down for maintenance. Try again later!",
