@@ -98,6 +98,25 @@ angular.module('app', [
         "js/adminlte/dashboard.js",
       ]
     })
+    .state('farm.shares', {
+      title: 'Shares',
+      url: '/shares',
+      subheading: 'Adjust Your Farm\'s Shares',
+      template: GetForm(),
+      stylesheets: [
+        "css/AdminLTE.min.css",
+        "css/AdminLTE/_all-skins.min.css",
+        "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css",
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css",
+      ],
+      scripts: [
+        "js/adminlte/adminlte.min.js",
+        "js/adminlte/dashboard.js",
+      ]
+    })
   }]);
 
+function GetForm(){
+  return "<div>Hello ray!</div>";
+}
   //5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8

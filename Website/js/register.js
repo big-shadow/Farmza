@@ -3,7 +3,7 @@ function register()
   var data = $('#register').serialize();
   $cache.password = data.password;
 
-  var response = communicator.sendRequest(data, '/user', 'POST');
+  var response = dispatcher.sendRequest(data, '/user', 'POST');
 
   response.success(function(data)
   {
